@@ -1,0 +1,99 @@
+/*Configurar variáveis de ambiente*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --cor_fundo: rgb(50, 62, 110);
+    --cor_destaque: rgb(255, 255, 255);
+    --cor_main: rgb(128, 181, 255);
+    --cor_fonte: rgb(255, 255, 255);
+}
+
+/*Resetar contorno da página*/
+*{
+    outline: 0;
+}
+
+/*resete da página*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor_fundo);
+    font-family: 'roboto';
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:80%;
+    margin: 20px auto;
+    background: var(--cor_main);
+    border-radius: 10px;
+}
+
+aside{
+    width: 80%;
+    margin: 0 auto;
+}
+.dados{
+    width: 80%;
+    margin-left:30px;
+}
+
+form input, form label{
+    display:block;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form button{
+    width: 30%;
+    height: 50px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+form input{
+    font-size: 26px;
+    padding: 0 20px;
+    height: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cor_main);
+}
+header h1{
+    color: var(--cor_fonte);
+    width: 90%;
+    text-align: center;
+}
+
+header figure{
+    width: 100px;
+}
+
+header img{
+    width: 80%;
+    height: 80%;
+}
+
+footer{
+
+    background: var(--cor_main);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: var(--cor_fonte);
+}
+
+figure img{
+    width: 60%;
+    height: 60%;
+}
